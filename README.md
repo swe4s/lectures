@@ -28,3 +28,8 @@ $ conda install -y pycodestyle
 ### Unit tests
 
 Based on the Python library `unittest`
+
+### Continuous Integration
+
+Using Travis CI
+
