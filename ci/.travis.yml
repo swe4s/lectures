@@ -1,0 +1,17 @@
+language: python
+
+before_install:
+    - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    - bash Miniconda3-latest-Linux-x86_64.sh -b
+    - . /home/travis/miniconda3/etc/profile.d/conda.sh
+    - conda update --yes conda
+    - conda config --add channels r
+    - conda create --yes -n test
+    - conda activate test
+    - conda install -y pycodestyle
+    - conda install --yes python=3.6
+      
+script:
+    - pycodestyle even_or_odd.py
+    - bash test_even_or_odd.sh
+    - python test_even_or_odd.py
