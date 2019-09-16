@@ -25,11 +25,15 @@ $ conda install -y pycodestyle
 
 ## Topics
 
-### Unit tests
+### Unit tests (`unit_test`)
 
 Based on the Python library `unittest`
 
-### Continuous Integration
+### Continuous Integration (`ci`)
 
 Using Travis CI
+
+### Test Driven Developmetn (`tdd`)
+
+Write tests, then write code to satisfy those tests
 
