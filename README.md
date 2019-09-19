@@ -21,6 +21,7 @@ $ conda create --yes -n swe4s
 $ conda activate swe4s
 $ conda install --yes python=3.6
 $ conda install -y pycodestyle
+$ conda install -y matplotlit
 ```
 
 ## Topics
@@ -36,4 +37,8 @@ Using Travis CI
 ### Test Driven Developmetn (`tdd`)
 
 Write tests, then write code to satisfy those tests
+
+### Data Visualization (`matplotlib`)
+
+Scatter plot, histogram, and combination plots of random data with matplotlib.
 
