@@ -1,4 +1,6 @@
 import sys
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 out_file = 'scatter.png'
