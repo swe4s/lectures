@@ -47,3 +47,7 @@ Scatter plot, histogram, and combination plots of random data with matplotlib.
 
 Integrate data between files using parallel arrays
 
+### Profiling and benchmarking code (`benchmark_profile`)
+
+Using `cProfile`
+
