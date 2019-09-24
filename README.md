@@ -42,3 +42,8 @@ Write tests, then write code to satisfy those tests
 
 Scatter plot, histogram, and combination plots of random data with matplotlib.
 
+### Data Integration
+#### Gene Expression  (`data_integration/gtex`)
+
+Integrate data between files using parallel arrays
+
