@@ -3,8 +3,7 @@ import gzip
 
 file_name = sys.argv[1]
 gene_name = sys.argv[2]
-
-out_file_name = gene_name + '_counts.txt'
+out_file_name = sys.argv[3]
 
 o = open(out_file_name, 'w')
 

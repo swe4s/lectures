@@ -1,10 +1,14 @@
+rule all:
+  input:
+    "foo.png"
+
 rule A:
   input:
-    "foo.txt"
+    "foo.txt",
   output:
     "foo.png"
   shell:
-    "python plot.py foo.txt foo.png"
+    "python " + "plot.py foo.txt foo.png"
 
 rule B:
   output:

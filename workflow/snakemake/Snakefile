@@ -1,20 +1,21 @@
-TISSUE_GENE_PAIRS = [ 'SDHB,Blood', 'SDHB,Brain' ]
-GENES = set([p.split(',')[0] for p in TISSUE_GENE_PAIRS])
-TISSUES = set([p.split(',')[1] for p in TISSUE_GENE_PAIRS])
-OUTFILE='_'.join(TISSUE_GENE_PAIRS) + '.png'
+TISSUE_GENE_PAIRS = [ ['SDHB','Blood'], ['SDHB','Brain'] ]
+GENES = set([p[0] for p in TISSUE_GENE_PAIRS])
+TISSUES = set([p[1] for p in TISSUE_GENE_PAIRS])
 
 rule all:
     input:
-        {OUTFILE}
+        '_'.join( ['-'.join(p) for p in TISSUE_GENE_PAIRS]) + '.png'
 
 rule plot:
     input:
         expand("{gene}_counts.txt", gene=GENES),
         expand("{tissue}_samples.txt", tissue=TISSUES),
     output:
-        {OUTFILE}
+        '_'.join( ['-'.join(p) for p in TISSUE_GENE_PAIRS]) + '.png'
     shell:
-        'python hist.py ' + ' '.join(TISSUE_GENE_PAIRS)
+        'python hist.py ' \
+        + ' '.join([' '.join(p) for p in TISSUE_GENE_PAIRS]) \
+        + ' {output}'
 
 
 rule tissue_samples:
@@ -23,7 +24,9 @@ rule tissue_samples:
     output:
         expand("{tissue}_samples.txt", tissue=TISSUES)
     shell:
-        "for tissue in {TISSUES}; do python get_tissue_samples.py {input} $tissue; done"
+        "for tissue in {TISSUES}; do " \
+        +  "python get_tissue_samples.py {input} $tissue $tissue\_samples.txt;"\
+        + "done"
 
 rule sample_tissue_data:
     output:
@@ -37,7 +40,9 @@ rule gene_sample_counts:
     output:
         expand("{gene}_counts.txt", gene=GENES)
     shell:
-        "for gene in {GENES}; do python get_gene_counts.py {input} $gene; done"
+        "for gene in {GENES}; do " \
+        +   "python get_gene_counts.py {input} $gene $gene\_counts.txt;" \
+        + "done"
         
 rule gene_data:
     output:

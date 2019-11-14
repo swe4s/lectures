@@ -2,8 +2,7 @@ import sys
 
 file_name = sys.argv[1]
 tissue_name = sys.argv[2]
-
-out_file_name = tissue_name + '_samples.txt'
+out_file_name = sys.argv[3]
 
 o = open(out_file_name, 'w')
 
