@@ -51,6 +51,6 @@ Integrate data between files using parallel arrays
 
 Using `cProfile`
 
-### Time Series ('timeseries')
+### Time Series (`timeseries`)
 
 Importing multiple files from a folder, handling time stamps
