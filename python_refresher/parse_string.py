@@ -9,10 +9,10 @@ for l in f:
     county_city = A[1]
     state = A[2]
     fips = A[3]
-    cases = A[4])
-    deaths = int(A[5])
+    cases = A[4]
+    deaths = A[5]
 
     if state == 'Colorado' and county_city == 'Boulder':
-        print(date, cases-total_cases)
+        print(date, cases)
 
 f.close()
