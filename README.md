@@ -54,3 +54,6 @@ Using `cProfile`
 ### Time Series (`timeseries`)
 
 Importing multiple files from a folder, handling time stamps
+
+### Pandas (`pandas`)
+Working with the pandas module to import and analyze data
