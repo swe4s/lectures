@@ -1,5 +1,9 @@
 from operator import itemgetter
 import re
+from datetime import datetime
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pylab as plt
 
 covid_data='covid-19-data/us-counties.csv'
 cencus_data='co-est2019-alldata.csv'
@@ -60,13 +64,34 @@ for co in co_county_pop:
 
 co_county_pop.sort(key=itemgetter(0))
 
-co_rate = []
+co_rates = []
 for co in co_county_cases:
     co_pop = binary_search(co[1], co_county_pop)
-    print(co, co_pop, int(co[2])/co_pop)
-    co_rate.append((co[0], co[1], int(co[2])/co_pop))
+    co_rates.append((co[0], co[1], int(co[2])/co_pop))
 
-co_rate.sort(key=itemgetter(2))
+co_rates.sort(key=itemgetter(1))
 
-for co in co_rate:
-    print(co)
+last_co = None
+dates = []
+rates = []
+
+fig = plt.figure(figsize=(10,3), dpi=300)
+ax = fig.add_subplot(1,1,1)
+
+
+
+for date, curr_co, rate  in co_rates:
+    if curr_co == last_co:
+        dates.append(datetime.strptime(date, '%Y-%m-%d'))
+        rates.append(rate)
+    else:
+        if len(dates) > 0 and min(rates) > 0:
+            ax.plot(dates, rates, lw=0.5)
+            ax.text(dates[-1], rates[-1], last_co, size=5)
+
+        dates = [datetime.strptime(date, '%Y-%m-%d')]
+        rates = [rate]
+
+    last_co = curr_co
+
+plt.savefig('out.png', bbox_inches='tight')
