@@ -4,9 +4,6 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pylab as plt
 
-covid_data='covid-19-data/us-counties.csv'
-cencus_data='co-est2019-alldata.csv'
-
 def linear_search(key, L):
     hit = -1
     for i  in range(len(L)):
@@ -33,8 +30,8 @@ def binary_search(key, D):
 
 
 def get_columns(file_name,
-                query_column,
-                query_value,
+                query_columns,
+                query_values,
                 target_columns):
 
     f = open(file_name, 'r', encoding = "ISO-8859-1")
@@ -46,7 +43,17 @@ def get_columns(file_name,
     for l in f:
         A = l.rstrip().split(',')
 
-        if A[query_column] == query_value:
+        match = True
+
+        if query_columns is not None:
+            for i in range(len(query_columns)):
+                query_column = query_columns[i]
+                query_value = query_values[i]
+                if A[query_column] != query_value:
+                    match = False
+                    break
+
+        if match:
             hit = []
             for target_column in target_columns:
                 hit.append(A[target_column])
@@ -69,6 +76,7 @@ def plot_lines(points, labels, file_name):
         file_name : string
                     Name of the output file.
     """
+
     fig = plt.figure(figsize=(10,3), dpi=300)
     ax = fig.add_subplot(1,1,1)
 
@@ -87,42 +95,49 @@ def plot_lines(points, labels, file_name):
 
     plt.savefig(file_name, bbox_inches='tight')
 
+def main() :
+    covid_data='covid-19-data/us-counties.csv'
+    cencus_data='co-est2019-alldata.csv'
 
-co_county_cases = get_columns(covid_data, 2, 'Colorado', (0,1,4))
-co_county_pop = get_columns(cencus_data, 5, 'Colorado', (6,7))
-for co in co_county_pop:
-    co[0]  = co[0][:-7]
-    co[1]  = int(co[1])
 
-co_county_pop.sort(key=itemgetter(0))
+    co_county_cases = get_columns(covid_data, [2], ['North Dakota'], (0,1,4))
+    co_county_pop = get_columns(cencus_data, [5], ['North Dakota'], (6,7))
+    for co in co_county_pop:
+        co[0]  = co[0][:-7]
+        co[1]  = int(co[1])
 
-co_rates = []
-for co in co_county_cases:
-    if co[1] == 'Unknown':
-        continue
-    co_pop = binary_search(co[1], co_county_pop)
-    co_rates.append((co[0], co[1], int(co[2])/co_pop))
+    co_county_pop.sort(key=itemgetter(0))
 
-co_rates.sort(key=itemgetter(1))
+    co_rates = []
+    for co in co_county_cases:
+        if co[1] == 'Unknown':
+            continue
+        co_pop = binary_search(co[1], co_county_pop)
+        co_rates.append((co[0], co[1], int(co[2])/co_pop))
 
-last_co = None
-curr_points = []
-points = []
-labels = []
-for date, curr_co, rate  in co_rates:
-    if curr_co == last_co:
-        curr_points.append( [datetime.strptime(date, '%Y-%m-%d'), rate ] )
-    else:
-        if len(curr_points) > 0:
-            points.append(curr_points)
-            labels.append(last_co)
+    co_rates.sort(key=itemgetter(1))
 
-        curr_points = [ [datetime.strptime(date, '%Y-%m-%d'), rate ] ]
+    last_co = None
+    curr_points = []
+    points = []
+    labels = []
+    for date, curr_co, rate  in co_rates:
+        if curr_co == last_co:
+            curr_points.append( [datetime.strptime(date, '%Y-%m-%d'), rate ] )
+        else:
+            if len(curr_points) > 0:
+                points.append(curr_points)
+                labels.append(last_co)
 
-    last_co = curr_co
+            curr_points = [ [datetime.strptime(date, '%Y-%m-%d'), rate ] ]
 
-curr_points.append( [datetime.strptime(date, '%Y-%m-%d'), rate ] )
-points.append(curr_points)
-labels.append(last_co)
+        last_co = curr_co
 
-plot_lines(points, labels, 'test.png')
+    curr_points.append( [datetime.strptime(date, '%Y-%m-%d'), rate ] )
+    points.append(curr_points)
+    labels.append(last_co)
+
+    plot_lines(points, labels, 'test.png')
+
+if __name__ == '__main__':
+    main()
