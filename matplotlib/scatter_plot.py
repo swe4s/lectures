@@ -19,4 +19,10 @@ ax = fig.add_subplot(1,1,1)
 
 ax.plot(X, Y, '.')
 
+ax.set_ylabel("Y axis")
+ax.set_xlabel("X axis")
+
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+
 plt.savefig(out_file,bbox_inches='tight')
