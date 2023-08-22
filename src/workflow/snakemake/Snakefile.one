@@ -1,0 +1,14 @@
+GENE="SDHB"
+
+rule all:
+    input:
+        GENE + '_counts.txt'
+
+rule gene_sample_counts:
+    input:
+        "GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_reads.acmg_59.gct.gz"
+    output:
+        GENE + '_counts.txt'
+    shell:
+        "python get_gene_counts.py {input} " + GENE + " {output}"
+

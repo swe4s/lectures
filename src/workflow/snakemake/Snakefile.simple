@@ -1,0 +1,14 @@
+GENE="SDHB"
+
+rule all:
+    input:
+        GENE + '_counts.txt'
+
+rule gene_sample_counts:
+    input:
+        "GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt"
+    output:
+        GENE + '_counts.txt'
+    shell:
+        "python get_gene_counts.py {input} " + GENE
+
