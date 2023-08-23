@@ -10,7 +10,7 @@ For more information about the course contct Ryan Layer at ryan.layer@colorado.e
 # Fall 2023 Schedule
 | Week | Dates | Topics | Assignment |
 |------|-------|--------|------------|
-| 1	| Aug 29, 31	| Intro([1](https://github.com/swe4s/lectures/blob/master/doc/Welcome%20to%20SWE4S.pdf)), Setup ([1](https://github.com/swe4s/lectures/blob/master/doc/Command%20Line.pdf), [2](https://github.com/swe4s/lectures/blob/master/doc/Shell%20Scripts.pdf), [3](https://github.com/swe4s/lectures/blob/master/doc/Development%20Environment.pdf), [4](https://github.com/swe4s/lectures/blob/master/doc/Conda.pdf)), and GitHub | 1 |
+| 1	| Aug 29, 31	| Intro<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Welcome%20to%20SWE4S.pdf)</sup>, Setup <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Command%20Line.pdf) [2](https://github.com/swe4s/lectures/blob/master/doc/Shell%20Scripts.pdf) [3](https://github.com/swe4s/lectures/blob/master/doc/Development%20Environment.pdf) [4](https://github.com/swe4s/lectures/blob/master/doc/Conda.pdf)</sup>, and GitHub | 1 |
 | 2	| Sep 5, 7	| Python | 2 |
 | 3	| Sep 12, 14	| Best Practices | 3 |
 | 4	| Sep 19, 21	| Project pitches | |
