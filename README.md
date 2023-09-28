@@ -14,7 +14,7 @@ For more information about the course contct Ryan Layer at ryan.layer@colorado.e
 | 2	| Sep 5, 7	| Python <sup>[1](https://github.com/swe4s/lectures/tree/master/src/python_refresher) [2](https://github.com/swe4s/lectures/blob/master/doc/Python%20Refresher.pdf)</sup> | [2](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%202_%20Python%20Refresher.pdf) |
 | 3	| Sep 12, 14	| Best Practices <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Best%20Practices.pdf)</sup> | [3](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%203_%20Best%20Practices.pdf) |
 | 4	| Sep 19, 21	| Project pitches | |
-| 5	| Sep 26, 28	| Unit tests<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Unit%20Testing.pdf)</sup>, Functional test | 4	|
+| 5	| Sep 26, 28	| Unit tests<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Unit%20Testing.pdf)</sup>, Functional tests<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Functional%20Testing.pdf)</sup>| 4	|
 | 6	| Oct 3, 5	| Test driven development, Continuous integration | 5 |
 | 7	| Oct 10, 12	| Benchmarking and Workflow - Kristen Schneider | 6 |
 | 8	| Oct 17, 19	| Code review | 7 |
