@@ -16,7 +16,7 @@ For more information about the course contct Ryan Layer at ryan.layer@colorado.e
 | 4	| Sep 19, 21	| Project pitches | |
 | 5	| Sep 26, 28	| Unit tests<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Unit%20Testing.pdf)</sup>, Functional tests<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Functional%20Testing.pdf)</sup>| [4](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%204_%20Testing.pdf)	|
 | 6	| Oct 3, 5	| Test driven development, Continuous integration | 5 |
-| 7	| Oct 10, 12	| Benchmarking and Workflow - Kristen Schneider | 6 |
+| 7	| Oct 10, 12	| Benchmarking and Workflow <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Piplines%20and%20workflows.pdf)</sup> | 6 |
 | 8	| Oct 17, 19	| Code review | 7 |
 | 9	| Oct 24, 26	| Project code review | 8 |
 | 1	| Oct 31, Nov 2	| Using libraries - Michael Bradshaw | 9 |
