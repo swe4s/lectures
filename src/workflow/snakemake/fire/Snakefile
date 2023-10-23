@@ -1,0 +1,32 @@
+COUNTRIES=['Afghanistan', 'Albania']
+
+def read_file_to_list(filename):
+    with open(filename, 'r') as f:
+        lines = [line.strip() for line in f]
+    return lines 
+
+rule all:
+  input:
+    expand('{country}.png', country=read_file_to_list('countries.txt'))
+
+rule country_fire_counts:
+  input:
+    'Argrofood_co2_emission.csv'
+  output:
+    '{x}.txt'
+  shell:
+    'python get_data.py "{input}" "{wildcards.x}" "{output}"'
+
+rule country_plot_hist:
+  input:
+    '{x}.txt'
+  output:
+    '{x}.png'
+  shell:
+    'python hist.py "{input}" "{output}" "{wildcards.x}" Fires Freq.'
+
+#rule random_file:
+  #output:
+    #'{x}.txt'
+  #shell:
+    #'for i in `seq 1 100`; do echo $RANDOM; done > {output}'
