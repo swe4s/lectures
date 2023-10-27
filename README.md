@@ -7,7 +7,7 @@ This repo contains the notes and small Python and Bash scripts used in teaching 
 
 For more information about the course contct Ryan Layer at ryan.layer@colorado.edu
 
-# Fall 2023 Schedule
+## Fall 2023 Schedule
 | Week | Dates | Topics | Assignment |
 |------|-------|--------|------------|
 | 1	| Aug 29, 31	| Intro<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Welcome%20to%20SWE4S.pdf)</sup>, Setup <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Command%20Line.pdf) [2](https://github.com/swe4s/lectures/blob/master/doc/Shell%20Scripts.pdf) [3](https://github.com/swe4s/lectures/blob/master/doc/Development%20Environment.pdf) [4](https://github.com/swe4s/lectures/blob/master/doc/Conda.pdf)</sup>, GitHub <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Git%20Workflow.pdf) [2](https://github.com/swe4s/lectures/blob/master/doc/Branching.pdf) [3](https://github.com/swe4s/lectures/blob/master/doc/Pull%20Request.pdf) [4](https://github.com/swe4s/lectures/blob/master/doc/Version%20Control%2C%20Git%2C%20and%20GitHub.pdf) [5](https://github.com/swe4s/lectures/blob/master/doc/Using%20SSH%20Keys%20with%20GitHub.pdf)</sup>, and GitHub Classroom<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/GitHub%20Classroom.pdf)</sup>| [1](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%201_%20GitHub%20Classroom.pdf) |
@@ -26,3 +26,25 @@ For more information about the course contct Ryan Layer at ryan.layer@colorado.e
 | 14	| Nov 28, 30	| Data Science / Machine learning - Jamie Dixon | |
 | 15	| Dec 5, 7	| Project presentations | |
 | 16	| Dec 12, 14	| Project presentations | |
+
+## Grading
+### Grad Grading					
+- Weekly assignments 60%		
+- Final project 40%		
+  - Proposal	10%
+  - Code Review 10%
+  - Presentation	40%
+  - Content 40%
+
+### Undergrad grading
+- Weekly assignments		90%
+- Final project (optional)	30% (yes, that adds up to 120)
+  
+## Class structure
+This class is the first of its kind and we will be flexible with the pace of topics and assignments. While attendance is not required, this is a hands-on class and lectures will be interactive. Supporting documents will be provided, but many details will only be covered in class. 
+
+## Assignments
+All assignments and grading will be through GitHub classroom. We will post the link to the assignment. Go to the link, accept the assignment, and clone the repository. All assignments must adhere to the Python best practices and must use the proper GitHub workflow. Unless directed otherwise, we will only consider the v1.0 release and use the date of that release as the submit time. Late assignments will not be considered. Assignments without the correct release will not be considered. You may work together on assignments, but I expect original contributions from every student. In most cases, assignments will be due at 5PM one week after they are posted.
+
+## Project
+All graduate students must propose and submit a project. Each project will have between 2 and 4 team members. A team may not have more than three graduate students. A team of 4 must have at least one undergraduate. Projects can address any scientific question and must incorporate all of the software engineering and software design topics covered in class. The question does not need to be novel, but all contributions must be original. Teams are encouraged, but not required, to meet with me about their topic. A short in-class proposal will focus on the scientific question and a longer final presentation will focus on the resulting software product and any results. Each team will perform and present a code review of another team’s code. Undergraduates are encouraged but not required to either join a team or develop their own project.
