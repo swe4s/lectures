@@ -2,7 +2,7 @@ import unittest
 import fire_gdp
 import random
 
-class TestRyan(unittest.TestCase):
+class TestFireGDP(unittest.TestCase):
 
     
     # goal: for some country plot the fire v gdp over time
@@ -33,7 +33,7 @@ class TestRyan(unittest.TestCase):
             self.assertEqual(fire_gdp.search(random_list,first_value), 0)
 
         
-    def test_ryan(self):
+    def test_get_fire_gdp_year_data(self):
         fire_file_name = 'Agrofood_co2_emission.csv'
         gdp_file_name = 'IMF_GDP.csv'
 
@@ -45,12 +45,12 @@ class TestRyan(unittest.TestCase):
         
         country = 'Albania'
         
-        data = fire_gdp.ryan(fire_file_name,
-                             gdp_file_name,
-                             country,
-                             fire_year_col,
-                             fire_savanna_col,
-                             fire_forest_col)
+        data = fire_gdp.get_fire_gdp_year_data(fire_file_name,
+                                               gdp_file_name,
+                                               country,
+                                               fire_year_col,
+                                               fire_savanna_col,
+                                               fire_forest_col)
 
         fire = data[0]
         gdp = data[1]
@@ -87,23 +87,23 @@ class TestRyan(unittest.TestCase):
         target_country = 'Zimbabwe'
         
         self.assertEqual(len(fire_gdp.get_data(fire_file_name, 
-                                           query_value=target_country, 
-                                           query_col=0)), 
+                                               query_value=target_country, 
+                                               query_col=0)), 
                         31)
         
         self.assertEqual(len(fire_gdp.get_data(gdp_file_name,
-                                           query_value=target_country,
-                                           query_col=0)), 
+                                               query_value=target_country,
+                                               query_col=0)), 
                          1)
         
         self.assertEqual(len(fire_gdp.get_data(empty_file_name,
-                                           query_value=target_country,
-                                           query_col=0)),
+                                               query_value=target_country,
+                                               query_col=0)),
                          0)
         
         self.assertEqual(len(fire_gdp.get_data(gdp_file_name,
-                                           query_value=target_country,
-                                           query_col=1)), 
+                                               query_value=target_country,
+                                               query_col=1)), 
                          0)
         
         self.assertRaises(IndexError,
@@ -146,32 +146,32 @@ class TestRyan(unittest.TestCase):
         target_country = 'Zimbabwe'
         
         data, header = fire_gdp.get_data(fire_file_name, 
-                                     query_value=target_country, 
-                                     query_col=0,
-                                     get_header=True)
+                                         query_value=target_country, 
+                                         query_col=0,
+                                         get_header=True)
         self.assertEqual(len(data), 31)
         self.assertEqual(len(header), 31)
         
         data,header = fire_gdp.get_data(gdp_file_name,
-                                    query_value=target_country,
-                                    query_col=0,
-                                    get_header=True)
+                                        query_value=target_country,
+                                        query_col=0,
+                                        get_header=True)
         
         self.assertEqual(len(data), 1)
         self.assertEqual(len(header), 74)
         
         data, header = fire_gdp.get_data(empty_file_name,
-                                     query_value=target_country,
-                                     query_col=0,
-                                     get_header=True)
+                                         query_value=target_country,
+                                         query_col=0,
+                                         get_header=True)
          
         self.assertEqual(len(data), 0)
         self.assertEqual(len(header), 0)       
         
         data, header = fire_gdp.get_data(gdp_file_name,
-                                     query_value=target_country,
-                                     query_col=1,
-                                     get_header=True) 
+                                         query_value=target_country,
+                                         query_col=1,
+                                         get_header=True) 
         
         self.assertEqual(len(data), 0)
         self.assertEqual(len(header), 74)

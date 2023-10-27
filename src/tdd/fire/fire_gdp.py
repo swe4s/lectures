@@ -29,12 +29,12 @@ def search(L, k):
             return i
     return None
     
-def ryan(fire_file_name,
-         gdp_file_name,
-         target_country,
-         fire_year_col,
-         fire_savanna_col,
-         fire_forest_col):
+def get_fire_gdp_year_data(fire_file_name,
+                           gdp_file_name,
+                           target_country,
+                           fire_year_col,
+                           fire_savanna_col,
+                           fire_forest_col):
     
     fire_datas = get_data(fire_file_name, 
                          query_value=target_country, 
@@ -58,11 +58,5 @@ def ryan(fire_file_name,
             gdps.append(float(clean_str(gdp_datas[0][year_idx])))
             
     return [fires, gdps, years]
-            
-        
-    
-    # get year from fire_data
-    # search for year in header, get the index of the hit
-    # inspect that index in data
-    # if a number then add to list
+
     
