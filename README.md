@@ -18,7 +18,7 @@ For more information about the course contct Ryan Layer at ryan.layer@colorado.e
 | 6	| Oct 3, 5	| Continuous integration <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Continuous%20Integration%20with%20GitHub%20Actions.pdf)</sup> | [5](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%205_%20Continuous%20Integration.pdf) |
 | 7	| Oct 10, 12	| Benchmarking <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Profiling%20and%20Benchmarking.pdf)</sup>, Workflow <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Piplines%20and%20workflows.pdf)</sup> | [6](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%206_%20Workflows.pdf) |
 | 8	| Oct 17, 19	| Code review <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Code%20Review.pdf) [2](https://github.com/swe4s/lectures/blob/master/doc/Code%20Review%20Check%20List.docx) [3](https://github.com/swe4s/lectures/blob/master/doc/Code%20review%20request.pdf)</sup> | [7](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%207_%20Code%20Review.pub.pdf) |
-| 9	| Oct 24, 26	| Test driven development, Sorting Searching and Indexing | 8 |
+| 9	| Oct 24, 26	| Test driven development, Sorting Searching and Indexing | [8](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%208_%20Searching%20and%20Test%20Driven%20Development.pdf) |
 | 1	| Oct 31, Nov 2	| Using libraries - Michael Bradshaw | 9 |
 | 11	| Nov 7, 9	|  Project code review | [10](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%2010_%20Project%20Code%20Review%20copy.pub.pdf) |
 | 12	| Nov 14, 16	| Hash tables | 11 |
