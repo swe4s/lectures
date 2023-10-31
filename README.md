@@ -27,6 +27,11 @@ For more information about the course contct Ryan Layer at ryan.layer@colorado.e
 | 15	| Dec 5, 7	| Project presentations | |
 | 16	| Dec 12, 14	| Project presentations | |
 
+## Other Topics
+| Topics |
+|--------|
+| Configuration files <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Config%20Files.pdf)</sup> |
+
 ## Grading
 ### Grad Grading					
 - Weekly assignments 60%		
