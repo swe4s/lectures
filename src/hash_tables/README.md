@@ -15,4 +15,4 @@ Rolling Hash
 Insert Time
 | ASCII | Rolling|
 |------|--------|
-|![](linear_ascii_rand_insert_time.png) | ![](linear_rolling_rand_insert_time.png) |
+|![](doc/linear_ascii_rand_insert_time.png) | ![](doc/linear_rolling_rand_insert_time.png) |
