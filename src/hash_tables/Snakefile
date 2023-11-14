@@ -1,20 +1,19 @@
+
+input_types = ['rand', 'nonrand', 'pandp']
+hash_types = ['ascii', 'rolling']
+plot_types = ['scatter', 'histogram']
+op_types = ['search', 'insert']
+
 rule all:
     input:
-        'doc/ascii_rand_scatter.png',
-        'doc/ascii_nonrand_scatter.png',
-        'doc/ascii_pandp_scatter.png',
-        'doc/rolling_rand_scatter.png',
-        'doc/rolling_nonrand_scatter.png',
-        'doc/rolling_pandp_scatter.png',
-        'doc/ascii_rand_histogram.png',
-        'doc/ascii_nonrand_histogram.png',
-        'doc/ascii_pandp_histogram.png',
-        'doc/rolling_rand_histogram.png',
-        'doc/rolling_nonrand_histogram.png',
-        'doc/rolling_pandp_histogram.png',
-        'doc/linear_ascii_rand_insert_time.png',
-        'doc/linear_rolling_rand_insert_time.png'
-
+        expand('doc/{hash_type}_{input_type}_{plot_type}.png',
+               hash_type = hash_types,
+               input_type = input_types,
+               plot_type = plot_types),
+        expand('doc/linear_{hash_type}_{input_type}_{op_type}_time.png',
+               hash_type = hash_types,
+               input_type = input_types,
+               op_type = op_types)
 rule plot_hash_scatter:
     input:
         'data/{input_type}_words.txt'
@@ -60,7 +59,7 @@ rule sim_hash:
                 {wildcards.num_inserts}  >  {output}
         """
 
-rule plot_insert_search_scatter:
+rule plot_insert_scatter:
     input:
         expand('{{probe_type}}_{{hash_type}}_{{input_type}}.{num_inserts}.txt', num_inserts = range(1000,10001,1000))
     output:
@@ -68,6 +67,21 @@ rule plot_insert_search_scatter:
     shell:
         """
             grep insert {wildcards.probe_type}_{wildcards.hash_type}_{wildcards.input_type}.*.txt \
+            | cut -d " " -f2,3 \
+            | python src/scatter.py \
+                {output} \
+                "Load factor" \
+                "Insert time"
+        """
+
+rule plot_search_scatter:
+    input:
+        expand('{{probe_type}}_{{hash_type}}_{{input_type}}.{num_inserts}.txt', num_inserts = range(1000,10001,1000))
+    output:
+        'doc/{probe_type}_{hash_type}_{input_type}_search_time.png'
+    shell:
+        """
+            grep search {wildcards.probe_type}_{wildcards.hash_type}_{wildcards.input_type}.*.txt \
             | cut -d " " -f2,3 \
             | python src/scatter.py \
                 {output} \
