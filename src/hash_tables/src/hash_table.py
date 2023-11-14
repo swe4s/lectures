@@ -104,9 +104,8 @@ if __name__ == '__main__':
         if ht.M == keys_to_add:
             break
 
-
     for v in V:
         t0 = time.time()
         r = ht.find(v)
         t1 = time.time()
-        print('search', t1 - t0)
+        print('search', ht.M/ht.N, t1 - t0)
