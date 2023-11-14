@@ -1,22 +1,18 @@
 
-```
-python hash_functions.py rand_words.txt ascii | python scatter.py ascii_hash_function.png "Hashed word" "Hashed value"
-```
+ASCII Hash
+| Random words | Non-random | Pride and Prejudice |
+|--------------|------------|---------------------|
+|![](doc/ascii_rand_scatter.png) |![](doc/ascii_nonrand_scatter.png) |![](doc/ascii_pandp_scatter.png) |
+|![](doc/ascii_rand_histogram.png) |![](doc/ascii_nonrand_histogram.png) |![](doc/ascii_pandp_histogram.png) |
 
-![](doc/ascii_hash_function.png)
+Rolling Hash
+| Random words | Non-random | Pride and Prejudice |
+|--------------|------------|---------------------|
+|![](doc/rolling_rand_scatter.png) |![](doc/rolling_nonrand_scatter.png) |![](doc/rolling_pandp_scatter.png) |
+|![](doc/rolling_rand_histogram.png) |![](doc/rolling_nonrand_histogram.png) |![](doc/rolling_pandp_histogram.png) |
 
-```
-python hash_functions.py rand_words.txt rolling | python scatter.py rolling_hash_function_rand.png "Hashed word" "Hashed value"
-```
 
-![](doc/rolling_hash_function_rand.png)
-
-```
-for M in $( seq  1000 1000 10000 ); do
-    python hash_table.py 10000 rolling linear rand_words.txt $M >  rolling_linear_rand.$M.txt
-done
-
-grep insert rolling_linear_rand.*.txt | cut -d " " -f2,3 | python scatter.py rolling_insert_time.png "Load factor" "Insert time"
-```
-
-![](doc/rolling_insert_time.png)
+Insert Time
+| ASCII | Rolling|
+|------|--------|
+|![](linear_ascii_rand_insert_time.png) | ![](linear_rolling_rand_insert_time.png) |
