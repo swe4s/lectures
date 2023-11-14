@@ -22,5 +22,7 @@ ax = fig.add_subplot(1,1,1)
 ax.hist(Y)
 ax.set_xlabel(x_label)
 ax.set_ylabel(y_label)
+ax.spines['right'].set_visible(False)
+ax.spines['top'].set_visible(False)
 
 plt.savefig(out_file,bbox_inches='tight')
