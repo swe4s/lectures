@@ -21,7 +21,7 @@ For more information about the course contct Ryan Layer at ryan.layer@colorado.e
 | 9	| Oct 24, 26	| Test driven development<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Test-Driven%20Development.pdf)</sup>, Sorting Searching and Indexing | [8](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%208_%20Searching%20and%20Test%20Driven%20Development.pdf) |
 | 1	| Oct 31, Nov 2	| Using libraries - Michael Bradshaw | [9](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%209_%20Libraries%20Pandas%20and%20MatPlotLib.pdf) |
 | 11	| Nov 7, 9	|  Project code review | [10](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%2010_%20Project%20Code%20Review%20copy.pub.pdf) |
-| 12	| Nov 14, 16	| Hash tables <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Hash%20Tables.pdf)</sup> | 11 |
+| 12	| Nov 14, 16	| Hash tables <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Hash%20Tables.pdf)</sup> | [11](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%2011_%20Hash%20Tables.pdf) |
 | 13	| Nov 21, 23	| Fall Break | |			
 | 14	| Nov 28, 30	| Data Science / Machine learning - Jamie Dixon | |
 | 15	| Dec 5, 7	| Project presentations | |
