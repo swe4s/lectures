@@ -23,7 +23,7 @@ For more information about the course contct Ryan Layer at ryan.layer@colorado.e
 | 11	| Nov 7, 9	|  Project code review | [10](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%2010_%20Project%20Code%20Review%20copy.pub.pdf) |
 | 12	| Nov 14, 16	| Hash tables <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Hash%20Tables.pdf)</sup> | [11](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%2011_%20Hash%20Tables.pdf) |
 | 13	| Nov 21, 23	| Fall Break | |			
-| 14	| Nov 28, 30	| Data Science / Machine learning - Jamie Dixon | |
+| 14	| Nov 28, 30	| Data Science / Machine learning - Jamie Dixon | [12](https://github.com/swe4s/lectures/tree/master/src/data_science) [13](https://github.com/swe4s/lectures/tree/master/src/machine_learning) |
 | 15	| Dec 5, 7	| Project presentations | |
 | 16	| Dec 12, 14	| Project presentations | |
 
