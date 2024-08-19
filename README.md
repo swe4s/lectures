@@ -18,12 +18,13 @@ Software Engineering for Scientists is a course for upper-level undergraduates a
 
 |  |  |
 | - | - |
-| **Class Location** | JSCBB A104 |
-| **Class Time** | Monday & Wednesday 3:00-4:15PM |
-| **Instructor** <br>**Email Address** <br>**Office Hours & Location** | Erik Johnson <br> erik.k.johnson@colorado.edu <br> TBD |
-| **Grader** <br>**Email Address** <br>**Office Hours & Location** | Parvathy Santhosh <br>  Parvathy.Santhosh@colorado.edu <br> TBD |
+| **Class location** | JSCBB A104 |
+| **Class time** | Monday & Wednesday 3:00-4:15PM |
+| **Instructor** <br>**Email address** <br>**Office hours & location** | Erik Johnson <br> erik.k.johnson@colorado.edu <br> TBD |
+| **Grader** <br>**Email address** <br>**Office hours & location** | Parvathy Santhosh <br>  Parvathy.Santhosh@colorado.edu <br> TBD |
 | **Slack** | https://join.slack.com/t/swe4s/shared_invite/zt-2ofkbxofb-zIpsAPqMZ0UrQH6ab3NdTw |
-| **Main GitHub repo** | https://github.com/swe4s-fall-2024/home |
+| **Main course webpage** | https://github.com/swe4s/lectures |
+| **GitHub Classroom** | https://classroom.github.com/classrooms/178437617-swe4s-fall-2024-classroom |
 
 ## Tentative schedule
 
