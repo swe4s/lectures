@@ -10,27 +10,27 @@ For more information about the course contct Ryan Layer at ryan.layer@colorado.e
 ## Fall 2023 Schedule
 | Week | Dates | Topics | Assignment |
 |------|-------|--------|------------|
-| 1	| Aug 29, 31	| Intro<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Welcome%20to%20SWE4S.pdf)</sup>, Setup <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Command%20Line.pdf) [2](https://github.com/swe4s/lectures/blob/master/doc/Shell%20Scripts.pdf) [3](https://github.com/swe4s/lectures/blob/master/doc/Development%20Environment.pdf) [4](https://github.com/swe4s/lectures/blob/master/doc/Conda.pdf)</sup>, GitHub <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Git%20Workflow.pdf) [2](https://github.com/swe4s/lectures/blob/master/doc/Branching.pdf) [3](https://github.com/swe4s/lectures/blob/master/doc/Pull%20Request.pdf) [4](https://github.com/swe4s/lectures/blob/master/doc/Version%20Control%2C%20Git%2C%20and%20GitHub.pdf) [5](https://github.com/swe4s/lectures/blob/master/doc/Using%20SSH%20Keys%20with%20GitHub.pdf)</sup>, and GitHub Classroom<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/GitHub%20Classroom.pdf)</sup>| [1](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%201_%20GitHub%20Classroom.pdf) |
-| 2	| Sep 5, 7	| Python <sup>[1](https://github.com/swe4s/lectures/tree/master/src/python_refresher) [2](https://github.com/swe4s/lectures/blob/master/doc/Python%20Refresher.pdf)</sup> | [2](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%202_%20Python%20Refresher.pdf) |
-| 3	| Sep 12, 14	| Best Practices <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Best%20Practices.pdf)</sup> | [3](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%203_%20Best%20Practices.pdf) |
+| 1	| Aug 29, 31	| Intro<sup>[1](doc/Welcome%20to%20SWE4S.pdf)</sup>, Setup <sup>[1](doc/Command%20Line.pdf) [2](doc/Shell%20Scripts.pdf) [3](doc/Development%20Environment.pdf) [4](doc/Conda.pdf)</sup>, GitHub <sup>[1](doc/Git%20Workflow.pdf) [2](doc/Branching.pdf) [3](doc/Pull%20Request.pdf) [4](doc/Version%20Control%2C%20Git%2C%20and%20GitHub.pdf) [5](doc/Using%20SSH%20Keys%20with%20GitHub.pdf)</sup>, and GitHub Classroom<sup>[1](doc/GitHub%20Classroom.pdf)</sup>| [1](assignments/Assignment%201_%20GitHub%20Classroom.pdf) |
+| 2	| Sep 5, 7	| Python <sup>[1](https://github.com/swe4s/lectures/tree/master/src/python_refresher) [2](doc/Python%20Refresher.pdf)</sup> | [2](assignments/Assignment%202_%20Python%20Refresher.pdf) |
+| 3	| Sep 12, 14	| Best Practices <sup>[1](doc/Best%20Practices.pdf)</sup> | [3](assignments/Assignment%203_%20Best%20Practices.pdf) |
 | 4	| Sep 19, 21	| Project pitches | |
-| 5	| Sep 26, 28	| Unit tests<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Unit%20Testing.pdf)</sup>, Functional tests<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Functional%20Testing.pdf)</sup>| [4](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%204_%20Testing.pdf)	|
-| 6	| Oct 3, 5	| Continuous integration <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Continuous%20Integration%20with%20GitHub%20Actions.pdf)</sup> | [5](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%205_%20Continuous%20Integration.pdf) |
-| 7	| Oct 10, 12	| Benchmarking <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Profiling%20and%20Benchmarking.pdf)</sup>, Workflow <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Piplines%20and%20workflows.pdf)</sup> | [6](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%206_%20Workflows.pdf) |
-| 8	| Oct 17, 19	| Code review <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Code%20Review.pdf) [2](https://github.com/swe4s/lectures/blob/master/doc/Code%20Review%20Check%20List.docx) [3](https://github.com/swe4s/lectures/blob/master/doc/Code%20review%20request.pdf)</sup> | [7](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%207_%20Code%20Review.pub.pdf) |
-| 9	| Oct 24, 26	| Test driven development<sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Test-Driven%20Development.pdf)</sup>, Sorting Searching and Indexing | [8](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%208_%20Searching%20and%20Test%20Driven%20Development.pdf) |
-| 1	| Oct 31, Nov 2	| Using libraries - Michael Bradshaw | [9](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%209_%20Libraries%20Pandas%20and%20MatPlotLib.pdf) |
-| 11	| Nov 7, 9	|  Project code review | [10](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%2010_%20Project%20Code%20Review%20copy.pub.pdf) |
-| 12	| Nov 14, 16	| Hash tables <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Hash%20Tables.pdf)</sup> | [11](https://github.com/swe4s/lectures/blob/master/assignments/Assignment%2011_%20Hash%20Tables.pdf) |
+| 5	| Sep 26, 28	| Unit tests<sup>[1](doc/Unit%20Testing.pdf)</sup>, Functional tests<sup>[1](doc/Functional%20Testing.pdf)</sup>| [4](assignments/Assignment%204_%20Testing.pdf)	|
+| 6	| Oct 3, 5	| Continuous integration <sup>[1](doc/Continuous%20Integration%20with%20GitHub%20Actions.pdf)</sup> | [5](assignments/Assignment%205_%20Continuous%20Integration.pdf) |
+| 7	| Oct 10, 12	| Benchmarking <sup>[1](doc/Profiling%20and%20Benchmarking.pdf)</sup>, Workflow <sup>[1](doc/Piplines%20and%20workflows.pdf)</sup> | [6](assignments/Assignment%206_%20Workflows.pdf) |
+| 8	| Oct 17, 19	| Code review <sup>[1](doc/Code%20Review.pdf) [2](doc/Code%20Review%20Check%20List.docx) [3](doc/Code%20review%20request.pdf)</sup> | [7](assignments/Assignment%207_%20Code%20Review.pub.pdf) |
+| 9	| Oct 24, 26	| Test driven development<sup>[1](doc/Test-Driven%20Development.pdf)</sup>, Sorting Searching and Indexing | [8](assignments/Assignment%208_%20Searching%20and%20Test%20Driven%20Development.pdf) |
+| 1	| Oct 31, Nov 2	| Using libraries - Michael Bradshaw | [9](assignments/Assignment%209_%20Libraries%20Pandas%20and%20MatPlotLib.pdf) |
+| 11	| Nov 7, 9	|  Project code review | [10](assignments/Assignment%2010_%20Project%20Code%20Review%20copy.pub.pdf) |
+| 12	| Nov 14, 16	| Hash tables <sup>[1](doc/Hash%20Tables.pdf)</sup> | [11](assignments/Assignment%2011_%20Hash%20Tables.pdf) |
 | 13	| Nov 21, 23	| Fall Break | |			
-| 14	| Nov 28, 30	| Data Science / Machine learning - Jamie Dixon | [12](https://github.com/swe4s/lectures/tree/master/src/data_science) [13](https://github.com/swe4s/lectures/tree/master/src/machine_learning) |
+| 14	| Nov 28, 30	| Data Science / Machine learning - Jamie Dixon | [12](src/data_science) [13](src/machine_learning) |
 | 15	| Dec 5, 7	| Project presentations | |
 | 16	| Dec 12, 14	| Project presentations | |
 
 ## Other Topics
 | Topics |
 |--------|
-| Configuration files <sup>[1](https://github.com/swe4s/lectures/blob/master/doc/Config%20Files.pdf)</sup> |
+| Configuration files <sup>[1](doc/Config%20Files.pdf)</sup> |
 
 ## Grading
 ### Grad Grading					
