@@ -1,15 +1,5 @@
 # CSCI 4118/6118 — Software Engineering for Scientists (SWE4S) — Fall 2024
 
----
-## :speaker: **ANNOUNCEMENTS** :speaker:
-- August 26: 
-
-  Welcome! 
-
-  I'm looking forward to the semester with you all. Please fill out [this form](https://forms.gle/kJnPeSyjcphpvCMg6) to help me know you better and design a better class.
-
----
-
 ## Course overview
 
 Software Engineering for Scientists is a course for upper-level undergraduates and graduate students in the sciences who want to enhance their research by developing custom software. This class will build off basic programming skills to enable the development of robust and reliable software for reproducible science. These skills will sample core elements from both software engineering (e.g., version control, testing and continuous integration, debugging, benchmarking, documentation, distribution) and software design (e.g., algorithm analysis, sorting and searching, file input and output, text parsing, basic data structures), and will be organized around the ingestion and processing of data for many different scientific domains. 
@@ -20,9 +10,9 @@ Software Engineering for Scientists is a course for upper-level undergraduates a
 | - | - |
 | **Class location** | JSCBB A104 |
 | **Class time** | Monday & Wednesday 3:00-4:15PM |
-| **Instructor** <br>**Email address** <br>**Office hours & location** | Erik Johnson <br> erik.k.johnson@colorado.edu <br> TBD |
-| **Grader** <br>**Email address** <br>**Office hours & location** | Parvathy Santhosh <br>  Parvathy.Santhosh@colorado.edu <br> TBD |
-| **Slack** | https://join.slack.com/t/swe4s/shared_invite/zt-2ofkbxofb-zIpsAPqMZ0UrQH6ab3NdTw |
+| **Instructor** <br>**Email address** <br>**Office hours & location** | Erik Johnson <br> erik.k.johnson@colorado.edu <br> Monday 1-3pm in JSCBB D311 or by appointment |
+| **Grader** <br>**Email address** <br>**Office hours & location** | Parvathy Santhosh <br>  parvathy.santhosh@colorado.edu <br> TBD |
+| **Slack** | [Invite link](https://join.slack.com/t/swe4s/shared_invite/zt-2ofkbxofb-zIpsAPqMZ0UrQH6ab3NdTw) |
 | **Main course webpage** | https://github.com/swe4s/lectures |
 | **GitHub Classroom** | https://classroom.github.com/classrooms/178437617-swe4s-fall-2024-classroom |
 
@@ -30,11 +20,11 @@ Software Engineering for Scientists is a course for upper-level undergraduates a
 
 | Week | Dates | Topic(s) | HW Num | Out | Due | References |
 | - | - | - | - | - | - | - |
-| 1 | Aug 26, 28 | Intro, setup, and GitHub | 1 | Aug 28 | Sep 4 | - Course intro slides <br> - Command line + shell scripting slides <br> - [Command line notes](lecture_notes/command-line-notes.pdf) <br> - [Shell scripting notes](lecture_notes/shell-scripts-notes.pdf) |
+| 1 | Aug 26, 28 | Course intro and setup, command line, shell scripting, and GitHub | 1 | Aug 28 | Sep 4 | - Course intro slides <br> - Command line + shell scripting slides <br> - [Command line notes](lecture_notes/command-line-notes.pdf) <br> - [Shell scripting notes](lecture_notes/shell-scripts-notes.pdf) |
 | 2 | Sep 2, 4 | Python | 2 | Sep 4 | Sep 11 |  |
 | 3 | Sep 9, 11 | Coding best practices | 3 | Sep 11 | Sep 25 |  |
 | 4 | Sep 16, 18 | Project pitches |  |  |  |  |
-| 5 | Sep 23, 25 | Unit tests, functional tests | 4 | Sep 25 | Oct 2 |  |
+| 5 | Sep 23, 25 | Unit tests, functional tests, and debugging | 4 | Sep 25 | Oct 2 |  |
 | 6 | Sep 30, Oct 2 | Test driven development, continuous integration | 5 | Oct 2 | Oct 9 |  |
 | 7 | Oct 7, 9 | Benchmarking and workflow | 6 | Oct 9 | Oct 16 |  |
 | 8 | Oct 14, 16 | Code review | 7 | Oct 16 | Oct 23 |  |
@@ -45,33 +35,66 @@ Software Engineering for Scientists is a course for upper-level undergraduates a
 | 13 | Nov 18, 20 | Data science and machine learning | | | | |
 | 14 | Nov 25, 27 | Fall break | | | | |
 | 15 | Dec 2, 4 | Project presentations | | | | |
-| 16 | Dec 12, 14 | Project presentations | | | | |
+| 16 | Dec 9, 11 | Project presentations | | | | |
 
 ## Class structure
 
-We will be flexible with the pace of topics and assignments and the choice of topics as we learn what is and is not interesting to folks. While attendance is not required, this is a hands-on class and lectures will be interactive. Supporting documents will be provided, but many details will only be covered in class. 
+We will be flexible with the pace of topics and the choice of topics as we learn what is and is not interesting/useful to folks. 
+While attendance is not required, this will be a hands-on class and lectures will be interactive and hopefully useful to you. 
+If lectures are proving *not* to be useful, please let me know so I can change things to make them useful!
+
+I will post links to course material (e.g., lecture slides, course notes, assignments) in the schedule table above. 
+Assignments will be available in the table above the date listed in the "Out" column. 
+Course material from day X will be posted before or after lecture on day X. 
+I will do my best to post all (or most of) the course material relevant to a particular assignment on the day the assignment goes out. 
 
 ## Grading
 ### Grad Grading					
-- Weekly assignments 60%		
-- Final project 40%		
-  - Proposal	10%
-  - Code Review 10%
-  - Presentation	40%
-  - Content 40%
+- Weekly assignments - 60%		
+- Final project - 40%		
+  - Proposal - 10%
+  - Code Review - 10%
+  - Presentation - 40%
+  - Content - 40%
 
 ### Undergrad grading
-- Weekly assignments		90%
-- Final project (optional)	30% (yes, that adds up to 120)%
-
+- Weekly assignments - 90%
+- Final project (optional)	- 30% (yes, that adds up to 120)%
 
 ## Assignments
 
-All assignments and grading will be through GitHub classroom. We will post the link to the assignment. Go to the link, accept the assignment, and clone the repository. All assignments must adhere to the Python best practices and must use the proper GitHub workflow. Unless directed otherwise, we will only consider the v1.0 release and use the date of that release as the submit time. Late assignments will not be considered. Assignments without the correct release will not be considered. You may work together on assignments, but I expect original contributions from every student. In most cases, assignments will be ***due at 5PM*** one week after they are posted.
+All assignments and grading will be through GitHub Classroom. 
+Grades will be posted to Canvas as well. 
+On the day the assignment is out, you'll be able to access the assignment via clicking the assignment link in the schedule table above.
+The assignemnt PDF will have a link to the GitHub Classroom link which will direct you to accept the assignment and clone the repository.
+All assignments must adhere to the Python best practices and must use the proper GitHub workflow. 
+Unless directed otherwise, grading will be based off the `v1.0.0` release and use the date of that release as the submit time. 
+Late assignments will not be considered. 
+Assignments without the correct release will not be considered. 
+You may work together on assignments but I expect original contributions from every student. 
+In most cases, assignments will be ***due at 5PM*** one week after they are posted.
 
 ## Project
 
-All graduate students must propose and submit a project. Each project will have between 2 and 4 team members. A team may not have more than three graduate students. A team of 4 must have at least one undergraduate. Projects can address any scientific question and must incorporate all of the software engineering and software design topics covered in class. The question does not need to be novel, but all contributions must be original. Teams are encouraged, but not required, to meet with me about their topic. A short in-class proposal will focus on the scientific question and a longer final presentation will focus on the resulting software product and any results. Each team will perform and present a code review of another team’s code. Undergraduates are encouraged but not required to either join a team or develop their own project.
+All graduate students must propose and submit a project. 
+Each project will have between 2 and 4 team members.
+A team may not have more than three graduate students. 
+A team of 4 must have at least one undergraduate. 
+Projects can address any scientific question and must incorporate all of the software engineering and software design topics covered in class. 
+The question does not need to be novel but all contributions must be original.
+Teams are encouraged, but not required, to meet with me about their topic. 
+A short in-class proposal will focus on the scientific question and a longer final presentation will focus on the resulting software product and any results. 
+Each team will perform and present a code review of another team’s code. 
+Undergraduates are encouraged, but not required, to develop their own project. 
+
+Here's some possible project ideas to give you an idea of what a possible project could be (but please don't let this list constrain your imagination!):
+
+- answer a novel scientific question with new or existing data
+- reanalyze some data in a new way
+- replicate an analysis that you're curious about
+
+These projects have been really cool in the past! 
+And some have resulted in publications. 
 
 ## Classroom Behavior
 
