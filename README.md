@@ -20,7 +20,7 @@ Software Engineering for Scientists is a course for upper-level undergraduates a
 
 | Week | Dates | Topic(s) | HW Num | Out | Due | References |
 | - | - | - | - | - | - | - |
-| 1 | Aug 26, 28 | Course intro, development environment, command line, shell scripting, and GitHub | 1 | Aug 28 | Sep 4 | - [Course intro slides](lecture-material/welcome-to-swe4s.pdf) <br> - [Development environment setup](lecture-material/development-environment-setup.pdf) <br> - [Getting-to-know-you form](https://docs.google.com/forms/d/e/1FAIpQLSexZ_fBr5i65hCWGwqot15hr24mzrt6IAJkUM9vkN9VzOvq1g/viewform) - Command line + shell scripting slides <br> - [Command line notes](lecture-material/command-line-notes.pdf) <br> - [Shell scripting notes](lecture-material/shell-scripts-notes.pdf) |
+| 1 | Aug 26, 28 | Course intro, development environment, command line, shell scripting, and GitHub | 1 | Aug 28 | Sep 4 | - [Course intro slides](lecture-material/welcome-to-swe4s.pdf) <br> - [Development environment setup](lecture-material/development-environment-setup.pdf) <br> - [Getting-to-know-you form](https://docs.google.com/forms/d/e/1FAIpQLSexZ_fBr5i65hCWGwqot15hr24mzrt6IAJkUM9vkN9VzOvq1g/viewform) <br> - Command line + shell scripting slides <br> - [Command line notes](lecture-material/command-line-notes.pdf) <br> - [Shell scripting notes](lecture-material/shell-scripts-notes.pdf) |
 | 2 | Sep 2, 4 | Python | 2 | Sep 4 | Sep 11 |  |
 | 3 | Sep 9, 11 | Coding best practices | 3 | Sep 11 | Sep 25 |  |
 | 4 | Sep 16, 18 | Project pitches |  |  |  |  |
