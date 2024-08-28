@@ -14,7 +14,6 @@ Software Engineering for Scientists is a course for upper-level undergraduates a
 | **Grader** <br>**Email address** <br>**Office hours & location** | Parvathy Santhosh <br>  parvathy.santhosh@colorado.edu <br> TBD |
 | **Slack** | [Invite link](https://join.slack.com/t/swe4s/shared_invite/zt-2ofkbxofb-zIpsAPqMZ0UrQH6ab3NdTw) |
 | **Main course webpage** | https://github.com/swe4s/lectures |
-| **GitHub Classroom** | https://classroom.github.com/classrooms/178437617-swe4s-fall-2024-classroom |
 
 ## Tentative schedule
 
