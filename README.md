@@ -11,7 +11,7 @@ Software Engineering for Scientists is a course for upper-level undergraduates a
 | **Class location** | JSCBB A104 |
 | **Class time** | Monday & Wednesday 3:00-4:15PM |
 | **Instructor** <br>**Email address** <br>**Office hours & location** | Erik Johnson <br> erik.k.johnson@colorado.edu <br> Monday 1-3pm in JSCBB D311 or by appointment |
-| **Grader** <br>**Email address** <br>**Office hours & location** | Parvathy Santhosh <br>  parvathy.santhosh@colorado.edu <br> TBD |
+| **Grader** <br>**Email address** <br>**Office hours & location** | Parvathy Santhosh <br>  parvathy.santhosh@colorado.edu <br>  |
 | **Slack** | [Invite link](https://join.slack.com/t/swe4s/shared_invite/zt-2ofkbxofb-zIpsAPqMZ0UrQH6ab3NdTw) |
 | **Main course webpage** | https://github.com/swe4s/lectures |
 
@@ -19,22 +19,22 @@ Software Engineering for Scientists is a course for upper-level undergraduates a
 
 | Week | Dates | Topic(s) | HW Num | Out | Due | References |
 | - | - | - | - | - | - | - |
-| 1 | Aug 26, 28 | Course intro, development environment, command line, shell scripting, and GitHub | [1](assignments/assignment-1.pdf) | Aug 28 | Sep 4 | - [Course intro slides](lecture-material/welcome-to-swe4s.pdf) <br> - [Development environment setup](lecture-material/development-environment-setup.pdf) <br> - [Getting-to-know-you form](https://docs.google.com/forms/d/e/1FAIpQLSexZ_fBr5i65hCWGwqot15hr24mzrt6IAJkUM9vkN9VzOvq1g/viewform) <br> - Command line+shell scripting: [slides](lecture-material/command-line-and-scripting.pdf), [command line](lecture-material/command-line-notes.pdf), [shell scripting](lecture-material/shell-scripts-notes.pdf) <br> - git + Github: [slides](lecture-material/git-github-workflow.pdf), [version control +git+GitHub](lecture-material/version-control-git-github.pdf), [GitHub authentication](lecture-material/authenticating-with-github.pdf), [change tagged commits](lecture-material/making-changes-to-tagged-commits.pdf), [git submodules](lecture-material/git-submodules.pdf) |
-| 2 | Sep 2, 4 | Python | 2 | Sep 4 | Sep 11 |  |
-| 3 | Sep 9, 11 | Coding best practices | 3 | Sep 11 | Sep 25 |  |
-| 4 | Sep 16, 18 | Project pitches |  |  |  |  |
-| 5 | Sep 23, 25 | Unit tests, functional tests, and debugging | 4 | Sep 25 | Oct 2 |  |
-| 6 | Sep 30, Oct 2 | Test driven development, continuous integration | 5 | Oct 2 | Oct 9 |  |
-| 7 | Oct 7, 9 | Benchmarking and workflow | 6 | Oct 9 | Oct 16 |  |
-| 8 | Oct 14, 16 | Code review | 7 | Oct 16 | Oct 23 |  |
-| 9 | Oct 21, 23 | Project code review | 8 | Oct 23 | Oct 30 |  |
-| 10 | Oct 28, 30 | Using libraries | 9 | Oct 30 | Nov 6 |  |
-| 11 | Nov 4, 6 | Sorting, searching, indexing | 9 | Nov 6 | Nov 13 |  |
-| 12 | Nov 11, 13 | Hash tables | 11 | Nov 13 | Nov 20 |  |
-| 13 | Nov 18, 20 | Data science and machine learning | | | | |
-| 14 | Nov 25, 27 | Fall break | | | | |
-| 15 | Dec 2, 4 | Project presentations | | | | |
-| 16 | Dec 9, 11 | Project presentations | | | | |
+| 1 | Aug 26, 28 | Course intro, development environment, command line, shell scripting, and GitHub |
+| 2 | Sep 2, 4 | Python | 2 | Sep 4 | Sep 11 |
+| 3 | Sep 9, 11 | Coding best practices | 3 | Sep 11 | Sep 25 | 
+| 4 | Sep 16, 18 | Project pitches |  |  |  |
+| 5 | Sep 23, 25 | Unit tests, functional tests, and debugging | 4 | Sep 25 | Oct 2 | 
+| 6 | Sep 30, Oct 2 | Test driven development, continuous integration | 5 | Oct 2 | Oct 9 |
+| 7 | Oct 7, 9 | Benchmarking and workflow | 6 | Oct 9 | Oct 16 |
+| 8 | Oct 14, 16 | Code review | 7 | Oct 16 | Oct 23 |
+| 9 | Oct 21, 23 | Project code review | 8 | Oct 23 | Oct 30 |
+| 10 | Oct 28, 30 | Using libraries | 9 | Oct 30 | Nov 6 | 
+| 11 | Nov 4, 6 | Sorting, searching, indexing | 9 | Nov 6 | Nov 13 | 
+| 12 | Nov 11, 13 | Hash tables | 11 | Nov 13 | Nov 20 | 
+| 13 | Nov 18, 20 | Data science and machine learning | | | | 
+| 14 | Nov 25, 27 | Fall break | | | | 
+| 15 | Dec 2, 4 | Project presentations | | | | 
+| 16 | Dec 9, 11 | Project presentations | | | | 
 
 ## Class structure
 
