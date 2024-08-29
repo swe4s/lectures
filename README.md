@@ -10,8 +10,8 @@ Software Engineering for Scientists is a course for upper-level undergraduates a
 | - | - |
 | **Class location** | JSCBB A104 |
 | **Class time** | Monday & Wednesday 3:00-4:15PM |
-| **Instructor** <br>**Email address** <br>**Office hours & location** | Erik Johnson <br> erik.k.johnson@colorado.edu <br> Monday 1-3pm in JSCBB D311 or by appointment |
-| **Grader** <br>**Email address** <br>**Office hours & location** | Parvathy Santhosh <br>  parvathy.santhosh@colorado.edu <br>  |
+| **Instructor** <br>**Email address** <br>**Office hours & location** | Erik Johnson <br> erik.k.johnson@colorado.edu <br> Monday 1-3pm in JSCBB D311 or by appointment (message me on Slack to set something up) |
+| **Grader** <br>**Email address** <br>**Office hours & location** | Parvathy Santhosh <br>  parvathy.santhosh@colorado.edu <br> Monday 10am-noon virtually at https://cuboulder.zoom.us/j/99449044841  |
 | **Slack** | [Invite link](https://join.slack.com/t/swe4s/shared_invite/zt-2ofkbxofb-zIpsAPqMZ0UrQH6ab3NdTw) |
 | **Main course webpage** | https://github.com/swe4s/lectures |
 
