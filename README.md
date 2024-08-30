@@ -1,4 +1,9 @@
-# CSCI 4118/6118 — Software Engineering for Scientists (SWE4S) — Fall 2024
+# DEPRECATED
+
+> [!WARNING]  
+> We moved to Canvas! Please don't use this repo as the course webpage anymore!
+
+## CSCI 4118/6118 — Software Engineering for Scientists (SWE4S) — Fall 2024
 
 ## Course overview
 
@@ -19,7 +24,7 @@ Software Engineering for Scientists is a course for upper-level undergraduates a
 
 | Week | Dates | Topic(s) | HW Num | Out | Due | References |
 | - | - | - | - | - | - | - |
-| 1 | Aug 26, 28 | Course intro, development environment, command line, shell scripting, and GitHub |
+| 1 | Aug 26, 28 | Course intro, development environment, command line, shell scripting, and GitHub | 1 | Aug 28 | Sep 4 |
 | 2 | Sep 2, 4 | Python | 2 | Sep 4 | Sep 11 |
 | 3 | Sep 9, 11 | Coding best practices | 3 | Sep 11 | Sep 25 | 
 | 4 | Sep 16, 18 | Project pitches |  |  |  |
@@ -29,7 +34,7 @@ Software Engineering for Scientists is a course for upper-level undergraduates a
 | 8 | Oct 14, 16 | Code review | 7 | Oct 16 | Oct 23 |
 | 9 | Oct 21, 23 | Project code review | 8 | Oct 23 | Oct 30 |
 | 10 | Oct 28, 30 | Using libraries | 9 | Oct 30 | Nov 6 | 
-| 11 | Nov 4, 6 | Sorting, searching, indexing | 9 | Nov 6 | Nov 13 | 
+| 11 | Nov 4, 6 | Sorting, searching, indexing | 10 | Nov 6 | Nov 13 | 
 | 12 | Nov 11, 13 | Hash tables | 11 | Nov 13 | Nov 20 | 
 | 13 | Nov 18, 20 | Data science and machine learning | | | | 
 | 14 | Nov 25, 27 | Fall break | | | | 
