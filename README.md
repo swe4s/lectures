@@ -1,9 +1,10 @@
 # DEPRECATED
 
 > [!WARNING]  
-> We moved to Canvas! Please don't use this repo as the course webpage anymore!
+> We moved the course's webpage to Canvas! Please don't use this repo as the course webpage anymore!
+> We'll still use this repo for some course material.
 
-## CSCI 4118/6118 — Software Engineering for Scientists (SWE4S) — Fall 2024
+# CSCI 4118/6118 — Software Engineering for Scientists (SWE4S) — Fall 2024
 
 ## Course overview
 
