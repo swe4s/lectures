@@ -145,4 +145,3 @@ See the [campus policy regarding religious observances](http://www.colorado.edu/
 The University of Colorado Boulder is committed to the well-being of all students. If you are struggling with personal stressors, mental health or substance use concerns that are impacting academic or daily life, please contact [Counseling and Psychiatric Services (CAPS)](https://www.colorado.edu/counseling/) located in C4C or call (303) 492-2277, 24/7. 
 
 Free and unlimited telehealth is also available through [Academic Live Care](https://www.colorado.edu/health/academiclivecare). The [Academic Live Care](https://www.colorado.edu/health/academiclivecare) site also provides information about additional wellness services on campus that are available to students.
-
