@@ -30,13 +30,13 @@ ryan.layer@colorado.edu.
 | 2    | Aug 28, Sep 2 | Python<sup>[1](https://github.com/swe4s/lectures/tree/master/src/python_refresher) [2](doc/Python%20Refresher.pdf)</sup> | [2](assignments/Assignment%202_%20Python%20Refresher.pdf) |                        
 | 3    | Sep 4, 9      | Best practices<sup>[1](doc/Best%20Practices.pdf)</sup> | [3](assignments/Assignment%203_%20Best%20Practices.pdf) |
 | 4    | Sep 11, 16    | Project pitches | |
-| 5    | Sep 18, 23    | Unit tests<sup>[1](doc/Unit%20Testing.pdf)</sup>, Functional tests<sup>[1](doc/Functional%20Testing.pdf)</sup>   | [4](assignments/Assignment%204_%20Testing.pdf)                  |
-| 6    | Sep 25, 30    | Continuous integration<sup>[1](doc/Continuous%20Integration%20with%20GitHub%20Actions.pdf)</sup>         | [5](assignments/Assignment%205_%20Continuous%20Integration.pdf) |
-| 7    | Oct 2, 7      | Test driven development<sup>[1](doc/Test-Driven%20Development.pdf)</sup>, Sorting Searching and Indexing        | [8](assignments/Assignment%208_%20Searching%20and%20Test%20Driven%20Development.pdf) |
+| 5    | Sep 18, 23    | Unit tests<sup>[1](doc/Unit%20Testing.pdf)</sup>, Functional tests<sup>[1](doc/Functional%20Testing.pdf)</sup>   | |
+| 6    | Sep 25, 30    | Continuous integration<sup>[1](doc/Continuous%20Integration%20with%20GitHub%20Actions.pdf)</sup>         | |
+| 7    | Oct 2, 7      | Test driven development<sup>[1](doc/Test-Driven%20Development.pdf)</sup>, Sorting Searching and Indexing        | |
 | 8    | Oct 9         | Reading Day | |
-| 9    | Oct 14, 16    | Code review<sup>[1](doc/Code%20Review.pdf) [2](doc/Code%20Review%20Check%20List.docx) [3](doc/Code%20review%20request.pdf)</sup> | [7](assignments/Assignment%207_%20Code%20Review.pub.pdf) |
+| 9    | Oct 14, 16    | Code review<sup>[1](doc/Code%20Review.pdf) [2](doc/Code%20Review%20Check%20List.docx) [3](doc/Code%20review%20request.pdf)</sup> | |
 | 10   | Oct 21, 23    | Benchmarking, Workflow<sup>[1](doc/Piplines%20and%20workflows.pdf)</sup> | 
-| 11   | Oct 28, 30    | Hash tables                    | [11](assignments/Assignment%2011_%20Hash%20Tables.pdf) |
+| 11   | Oct 28, 30    | Hash tables                    | |
 | 12   | Nov 4, 6      | Using/creating libraries       | |
 | 13   | Nov 11, 13    | Project code review            | |
 | 14   | Nov 18, 20    | AI code assistants             | |
