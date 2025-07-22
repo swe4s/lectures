@@ -30,7 +30,7 @@ ryan.layer@colorado.edu.
 | 2    | Aug 28, Sep 2 | Python<sup>[1](https://github.com/swe4s/lectures/tree/master/src/python_refresher) [2](doc/Python%20Refresher.pdf)</sup> | [2](assignments/Assignment%202_%20Python%20Refresher.pdf) |                        
 | 3    | Sep 4, 9      | Best practices<sup>[1](doc/Best%20Practices.pdf)</sup> | [3](assignments/Assignment%203_%20Best%20Practices.pdf) |
 | 4    | Sep 11, 16    | Project pitches | |
-| 5    | Sep 18, 23    | Unit tests<sup>[1](doc/Unit%20Testing.pdf)</sup>, Functional tests<sup>[1](doc/Functional%20Testing.pdf)</sup>   | |
+| 5    | Sep 18, 23    | Unit tests<sup>[1](doc/Unit%20Testing.pdf)</sup>, Functional tests<sup>[1](doc/Functional%20Testing.pdf)</sup>   | [4](assignments/Assignment%204_%20Testing.pdf) |
 | 6    | Sep 25, 30    | Continuous integration<sup>[1](doc/Continuous%20Integration%20with%20GitHub%20Actions.pdf)</sup>         | |
 | 7    | Oct 2, 7      | Test driven development<sup>[1](doc/Test-Driven%20Development.pdf)</sup>, Sorting Searching and Indexing        | |
 | 8    | Oct 9         | Reading Day | |
