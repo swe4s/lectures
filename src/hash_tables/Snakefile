@@ -1,0 +1,90 @@
+
+input_types = ['rand', 'nonrand', 'pandp']
+hash_types = ['ascii', 'rolling']
+plot_types = ['scatter', 'histogram']
+op_types = ['search', 'insert']
+
+rule all:
+    input:
+        expand('doc/{hash_type}_{input_type}_{plot_type}.png',
+               hash_type = hash_types,
+               input_type = input_types,
+               plot_type = plot_types),
+        expand('doc/linear_{hash_type}_{input_type}_{op_type}_time.png',
+               hash_type = hash_types,
+               input_type = input_types,
+               op_type = op_types)
+rule plot_hash_scatter:
+    input:
+        'data/{input_type}_words.txt'
+    output:
+        'doc/{hash_type}_{input_type}_scatter.png'
+    shell:
+        """
+            python src/hash_functions.py \
+                data/{wildcards.input_type}_words.txt {wildcards.hash_type} \
+            | python src/scatter.py \
+                {output} \
+                "Hashed word" \
+                "Hashed value"
+        """
+
+rule plot_hash_histogram:
+    input:
+        'data/{input_type}_words.txt'
+    output:
+        'doc/{hash_type}_{input_type}_histogram.png'
+    shell:
+        """
+            python src/hash_functions.py \
+                data/{wildcards.input_type}_words.txt {wildcards.hash_type} \
+            | python src/histogram.py \
+                {output} \
+                "Hashed value" \
+                "Freq."
+        """
+
+rule sim_hash:
+    output:
+        '{probe_type}_{hash_type}_{input_type}.{num_inserts}.txt'
+    params:
+        size = 10000
+    shell:
+        """
+            python src/hash_table.py \
+                {params.size} \
+                {wildcards.hash_type} \
+                {wildcards.probe_type} \
+                data/{wildcards.input_type}_words.txt \
+                {wildcards.num_inserts}  >  {output}
+        """
+
+rule plot_insert_scatter:
+    input:
+        expand('{{probe_type}}_{{hash_type}}_{{input_type}}.{num_inserts}.txt', num_inserts = range(1000,10001,1000))
+    output:
+        'doc/{probe_type}_{hash_type}_{input_type}_insert_time.png'
+    shell:
+        """
+            grep insert {wildcards.probe_type}_{wildcards.hash_type}_{wildcards.input_type}.*.txt \
+            | cut -d " " -f2,3 \
+            | python src/scatter.py \
+                {output} \
+                "Load factor" \
+                "Insert time"
+        """
+
+rule plot_search_scatter:
+    input:
+        expand('{{probe_type}}_{{hash_type}}_{{input_type}}.{num_inserts}.txt', num_inserts = range(1000,10001,1000))
+    output:
+        'doc/{probe_type}_{hash_type}_{input_type}_search_time.png'
+    shell:
+        """
+            grep search {wildcards.probe_type}_{wildcards.hash_type}_{wildcards.input_type}.*.txt \
+            | cut -d " " -f2,3 \
+            | python src/scatter.py \
+                {output} \
+                "Load factor" \
+                "Insert time"
+        """

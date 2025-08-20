@@ -1,0 +1,17 @@
+rule all:
+  input:
+    "foo.png"
+
+rule A:
+  input:
+    "foo.txt",
+  output:
+    "foo.png"
+  shell:
+    "python " + "plot.py foo.txt foo.png"
+
+rule B:
+  output:
+    "foo.txt"
+  shell:
+    "seq 1 100 > foo.txt"
