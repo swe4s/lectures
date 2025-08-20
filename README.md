@@ -26,8 +26,8 @@ ryan.layer@colorado.edu.
 ## Fall 2025 Schedule
 | Week | Dates         | Topics | Assignment |
 |------|---------------|--------|------------|
-| 1    | Aug 21, 26    | Intro<sup>[1](doc/Welcome%20to%20SWE4S.pdf)</sup>, Setup<sup>[1](doc/Command%20Line.pdf) [2](doc/Shell%20Scripts.pdf) [3](doc/Development%20Environment.pdf) [4](doc/Conda.pdf)</sup>, GitHub<sup>[1](doc/Git%20Workflow.pdf) [2](doc/Branching.pdf) [3](doc/Pull%20Request.pdf) [4](doc/Version%20Control%2C%20Git%2C%20and%20GitHub.pdf) [5](doc/Using%20SSH%20Keys%20with%20GitHub.pdf)</sup>, GitHub Classroom<sup>[1](doc/GitHub%20Classroom.pdf)</sup> | [1](assignments/Assignment%201_%20GitHub%20Classroom.pdf) |
-| 2    | Aug 28, Sep 2 | Python<sup>[1](https://github.com/swe4s/lectures/tree/master/src/python_refresher) [2](doc/Python%20Refresher.pdf)</sup> | [2](assignments/Assignment%202_%20Python%20Refresher.pdf) |                        
+| 1    | Aug 21, 26    | Intro<sup>[1](doc/Welcome%20to%20SWE4S.pdf)</sup>, Setup<sup>[cmd line](doc/Command%20Line.pdf), [shell scripts](doc/Shell%20Scripts.pdf), [dev env](doc/Development%20Environment.pdf), [conda](doc/Conda.pdf)</sup>, GitHub<sup>[git workflow slides](doc/Git%20Workflow.pdf), [branching](doc/Branching.pdf) [pr](doc/Pull%20Request.pdf), [vc+git+github notes](doc/Version%20Control%2C%20Git%2C%20and%20GitHub.pdf), [ssh keys](doc/Using%20SSH%20Keys%20with%20GitHub.pdf)</sup>, GitHub Classroom<sup>[1](doc/GitHub%20Classroom.pdf)</sup> | [1](assignments/Assignment%201_%20GitHub%20Classroom.pdf) |
+| 2    | Aug 28, Sep 2 | Python<sup>[1](https://github.com/swe4s/lectures/tree/main/src/python_refresher) [2](doc/Python%20Refresher.pdf)</sup> | [2](assignments/Assignment%202_%20Python%20Refresher.pdf) |                        
 | 3    | Sep 4, 9      | Best practices<sup>[1](doc/Best%20Practices.pdf)</sup> | [3](assignments/Assignment%203_%20Best%20Practices.pdf) |
 | 4    | Sep 11, 16    | Project pitches | |
 | 5    | Sep 18, 23    | Unit tests<sup>[1](doc/Unit%20Testing.pdf)</sup>, Functional tests<sup>[1](doc/Functional%20Testing.pdf)</sup>   | [4](assignments/Assignment%204_%20Testing.pdf) |
