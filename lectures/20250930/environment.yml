@@ -1,0 +1,6 @@
+name: math_lib
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - pycodestyle>=2.14
