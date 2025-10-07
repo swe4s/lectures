@@ -20,9 +20,9 @@ class TestFileLib(unittest.TestCase):
                        ['Afghanistan', '1994', '14.7237', '0.0557' ,'242.0494'],
                        ['Afghanistan', '1995', '14.7237', '0.0557' ,'243.8152'],
                        ['Afghanistan', '1996', '38.9302', '0.2014' ,'249.0364'],
-                       ['Algeria', '2020', '41.1136', '107.1825','361.0129']]
+                       ['Algeria', '1968', '41.1136', '107.1825','361.0129']]
 
-        self.assertEqual(data, expect_data)
+        self.assertEqual(data.data, expect_data)
 
         file_path = 'test_data_imf.csv' 
 
@@ -50,7 +50,7 @@ class TestFileLib(unittest.TestCase):
                         ["Belize", None, None, None, "41.61", "65.19", "62.38", "60.51", "51.95", "33.82"],
                         ["Benin", None, None, "148,214.99", "168,532.14", "187,659.49", "203,306.84", "218,253.22", "228,257.42", "244,301.30"]]
                     
-        self.assertEqual(data, expect_data)
+        self.assertEqual(data.data, expect_data)
 
     # providing a query value and query column to only return rows where the
     # string at that column matches the value.
@@ -67,16 +67,88 @@ class TestFileLib(unittest.TestCase):
                        ['Afghanistan', '1995', '14.7237', '0.0557' ,'243.8152'],
                        ['Afghanistan', '1996', '38.9302', '0.2014' ,'249.0364']]
 
-        self.assertEqual(data, expect_data)
+        self.assertEqual(data.data, expect_data)
 
         data = file_lib.get_data(file_path, query_value='Algeria', query_col=0)
 
-        self.assertEqual(len(data), 1)
+        self.assertEqual(len(data.data), 1)
 
         data = file_lib.get_data(file_path, query_value='ALSKDFJ', query_col=0)
 
         self.assertEqual(data, None)
 
+    # optionally retrieve the header
+    def test_get_data_query_r(self):
+        file_path = 'test_data.csv' 
+
+        data = file_lib.get_data(file_path,
+                                 query_value='Afghanistan',
+                                 query_col=0,
+                                 header=True)
+
+        expected_header = ['Area', 'Year', 'Savanna fires', 'Forest fires', 'Crop Residues']
+
+        self.assertEqual(data.header, expected_header)
+
+        data = file_lib.get_data(file_path,
+                                 query_value='Afghanistan',
+                                 query_col=0,
+                                 header=False)
+
+        self.assertEqual(data.header, None)
+ 
+        data = file_lib.get_data(file_path,
+                                 query_value='Afghanistan',
+                                 query_col=0)
+
+        self.assertEqual(data.header, None)
+
+
+    def test_search_parallel_lists(self):
+
+        data_list =  ['a', 'b', 'c', 'd', 'e'] 
+        index_list = [15, 25, 35, 45, 55]
+        key = 35
+        value = file_lib.search_parallel_lists(data_list,
+                                               index_list,
+                                               key)
+        expected_value = 'c'
+
+        self.assertEqual(value, expected_value)
+
+        key = 100
+        value = file_lib.search_parallel_lists(data_list,
+                                               index_list,
+                                               key)
+        expected_value = None
+
+        self.assertEqual(value, expected_value)
+
+        file_path = 'test_data.csv' 
+
+        data_co2 = file_lib.get_data(file_path,
+                                 query_value='Algeria',
+                                 query_col=0,
+                                 header=True)
+
+        self.assertEqual(data_co2.data[0][0], 'Algeria')
+
+
+        file_path = 'test_data_imf.csv'
+
+        data_gdp = file_lib.get_data(file_path,
+                                     query_value='Algeria',
+                                     query_col=0,
+                                     header=True)
+        self.assertTrue(len(data_gdp.data) == 1)
+
+        value = file_lib.search_parallel_lists(data_gdp.data[0], # data_gdp is a list of lists
+                                               data_gdp.header,
+                                               data_co2.data[0][1]) # holds the year
+
+        expect_value = '28,321.51'
+
+        self.assertEqual(value, expect_value)
 
 
 
