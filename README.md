@@ -32,7 +32,7 @@ ryan.layer@colorado.edu.
 | 4    | Sep 11, 16    | Project pitches | |
 | 5    | Sep 18, 23    | Unit tests<sup>[1](doc/Unit%20Testing.pdf)</sup>, Functional tests<sup>[1](doc/Functional%20Testing.pdf)</sup>   | [4](assignments/Assignment%204_%20Testing.pdf) |
 | 6    | Sep 25, 30    | Continuous integration<sup>[1](doc/Continuous%20Integration%20with%20GitHub%20Actions.pdf)</sup>         | [5](assignments/Assignment%205_%20Continuous%20Integration.pdf)|
-| 7    | Oct 2, 7      | Test driven development<sup>[1](doc/Test-Driven%20Development.pdf)</sup>, Sorting Searching and Indexing        | |
+| 7    | Oct 2, 7      | Test driven development<sup>[1](doc/Test-Driven%20Development.pdf)</sup>, Sorting Searching and Indexing        |  [6](assignments/Assignment%206_%20Searching%20and%20Test%20Driven%20Development.pdf)|
 | 8    | Oct 9         | Reading Day | |
 | 9    | Oct 14, 16    | Code review<sup>[1](doc/Code%20Review.pdf) [2](doc/Code%20Review%20Check%20List.docx) [3](doc/Code%20review%20request.pdf)</sup> | |
 | 10   | Oct 21, 23    | Benchmarking, Workflow<sup>[1](doc/Piplines%20and%20workflows.pdf)</sup> | 
