@@ -1,0 +1,22 @@
+rule all:
+    input: "brazil.png"
+
+rule downloads:
+    output: "IMF_GDP.csv", "Agrofood_co2_emission.csv"
+    shell:
+        '''
+        curl -L "https://docs.google.com/uc?export=download&id=1Wytf3ryf9EtOwaloms8HEzLG0yjtRqxr" -o Agrofood_co2_emission.csv
+        curl -L "https://docs.google.com/uc?export=download&id=1tuoQ9UTW_XRKgBOBaTLtGXh8h0ytKvFp" -o IMF_GDP.csv
+        '''
+
+rule get_data:
+    input: "IMF_GDP.csv", "Agrofood_co2_emission.csv"
+    output: "brazil.data"
+    shell: 
+        'python get_fire_gdp.py "Brazil" "Brazil" > brazil.data'
+
+rule scatter:
+    input: "brazil.data"
+    output: "brazil.png"
+    shell: 
+        'python scatter.py brazil.data brazil.png "Brazil" "CO2" "GDP"'
