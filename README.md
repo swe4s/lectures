@@ -35,7 +35,7 @@ ryan.layer@colorado.edu.
 | 7    | Oct 2, 7      | Test driven development<sup>[1](doc/Test-Driven%20Development.pdf)</sup>, Sorting Searching and Indexing        |  [6](assignments/Assignment%206_%20Searching%20and%20Test%20Driven%20Development.pdf)|
 | 8    | Oct 9         | Reading Day | |
 | 9    | Oct 14, 16    | Code review<sup>[1](doc/Code%20Review.pdf) [2](doc/Code%20Review%20Check%20List.docx) [3](doc/Code%20review%20request.pdf)</sup> | [7](assignments/Assignment%207_%20Code%20Review.pub.pdf)|
-| 10   | Oct 21, 23    | Config Files<sup>[1](doc/Config%20Files.pdf)</sup>,Benchmarking<sup>[1](doc/Profiling%20and%20Benchmarking.pdf)</sup>, Workflow<sup>[1](doc/Piplines%20and%20workflows.pdf)</sup> | 
+| 10   | Oct 21, 23    | Config Files<sup>[1](doc/Config%20Files.pdf)</sup>,Benchmarking<sup>[1](doc/Profiling%20and%20Benchmarking.pdf)</sup>, Workflow<sup>[1](doc/Piplines%20and%20workflows.pdf)</sup> | [8](assignments/Assignment%208_%20Workflow%20Language.pdf)
 | 11   | Oct 28, 30    | Hash tables                    | |
 | 12   | Nov 4, 6      | Using/creating libraries       | |
 | 13   | Nov 11, 13    | Project code review            | |
