@@ -1,0 +1,54 @@
+import file_lib
+
+def get_countries(file_path):
+    countries = []
+    with open(file_path) as file:
+        for line in file:   
+            countries.append(line.rstrip() + ".png")
+    return countries
+
+rule all:
+    input: get_countries("countries.txt")
+
+rule downloads:
+    output: gdp = "IMF_GDP.csv",
+            co2 = "Agrofood_co2_emission.csv"
+    shell:
+        '''
+        curl -L "https://docs.google.com/uc?export=download&id=1Wytf3ryf9EtOwaloms8HEzLG0yjtRqxr" -o {output.co2}
+        curl -L "https://docs.google.com/uc?export=download&id=1tuoQ9UTW_XRKgBOBaTLtGXh8h0ytKvFp" -o {output.gdp}
+        '''
+
+rule fake_get_data:
+    input: gdp = "IMF_GDP.csv",
+           co2 = "Agrofood_co2_emission.csv"
+    output: "Brazil.data"
+    shell: 
+        '''
+        python get_fire_gdp.py \
+            {input.co2} \
+            Brazil \
+            {input.gdp} \
+            Brazil \
+        > {output}
+        '''
+
+rule get_data:
+    input: gdp = "IMF_GDP.csv",
+           co2 = "Agrofood_co2_emission.csv"
+    output: "{country}.data"
+    shell: 
+        '''
+        python get_fire_gdp.py \
+            {input.co2} \
+            {wildcards.country} \
+            {input.gdp} \
+            {wildcards.country} \
+        > {output}
+        '''
+
+rule scatter:
+    input: "{country}.data"
+    output: "{country}.png"
+    shell: 
+        'python scatter.py {input} {output} {wildcards.country} "CO2" "GDP"'
