@@ -36,7 +36,7 @@ ryan.layer@colorado.edu.
 | 8    | Oct 9         | Reading Day | |
 | 9    | Oct 14, 16    | Code review<sup>[1](doc/Code%20Review.pdf) [2](doc/Code%20Review%20Check%20List.docx) [3](doc/Code%20review%20request.pdf)</sup> | [7](assignments/Assignment%207_%20Code%20Review.pub.pdf)|
 | 10   | Oct 21, 23    | Config Files<sup>[1](doc/Config%20Files.pdf)</sup>, Workflow<sup>[1](doc/Piplines%20and%20workflows.pdf)</sup> | [8](assignments/Assignment%208_%20Workflow%20Language.pdf)
-| 11   | Oct 28, 30    | Hash tables<sup>[1](doc/Hash%20Tables.pdf) | [9](assignments/Assignment%209_%20Hash%20Tables.pdf), Benchmarking<sup>[1](doc/Profiling%20and%20Benchmarking.pdf)</sup> |
+| 11   | Oct 28, 30    | Hash tables<sup>[1](doc/Hash%20Tables.pdf), Benchmarking<sup>[1](doc/Profiling%20and%20Benchmarking.pdf)</sup> | [9](assignments/Assignment%209_%20Hash%20Tables.pdf)|
 | 12   | Nov 4, 6      | Using/creating libraries       | |
 | 13   | Nov 11, 13    | Project code review            | |
 | 14   | Nov 18, 20    | AI code assistants             | |
